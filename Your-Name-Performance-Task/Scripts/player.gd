@@ -17,3 +17,7 @@ func _process(velocity):
 		velocity.x += 1
 		
 	position += velocity * Speed
+
+
+func _on_enemy_body_entered(body):
+	hide()
